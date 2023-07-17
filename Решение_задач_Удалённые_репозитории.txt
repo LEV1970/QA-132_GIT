@@ -1,0 +1,69 @@
+Удалённые репозитории
+
+Секция "Push & Pull - удалённые репозитории в Git!"
+
+Задача №1 "Введение в клонирование"
+
+Решение: git clone
+
+Задача №2 "Удалённые ветки в Git"
+
+Решение: git commit; git checkout o/main; git commit
+
+Задача №3 "Git Fetch"
+ 
+Решение: git fetch
+
+Задача №4 "Git Pull"
+
+Решение: git pull
+
+Задача №5 "Симуляция совместной работы"
+
+Решение: git clone; git fakeTeamwork main 2; git commit; git pull
+
+Задача №6 "Git Push"
+
+Решение: git commit; git commit; git push
+
+Задача №7 "Когда наработки расходятся"
+
+Решение: git clone; git fakeTeamwork; git commit; git pull --rebase; git push
+
+Задача №8 "Remote Rejected!"
+
+Решение: git checkout -b feature; git branch -f main o/main; git push
+
+Секция "Через origin – к звёздам. Продвинутое использование Git Remotes"
+
+Задача №1 "Слияние фича-бранчей (веток)"
+
+Решение: git fetch; git rebase C8 side1; git rebase side1 side2; git rebase side2 side3; git branch -f main; git push origin main
+         
+Задача №2 "Слияние с удаленным репозиторием"
+
+Решение: git checkout main; git pull; git merge side1; git merge side2; git merge side3; git push
+
+Задача №3 "Удалённые-отслеживаемые ветки"
+
+Решение: git checkout -b side o/main; git commit; git pull --rebase; git push
+
+Задача №4 "Аргументы команды Push"
+
+Решение: git push origin main; git push origin foo
+
+Задача №5 "Подробности аргумента <пункт назначения>"
+
+Решение: git push origin foo:main; git push origin main^:foo
+
+Задача №6 "Аргументы git fetch"
+
+Решение: git fetch origin foo:main; git fetch origin main~1:foo; git checkout foo; git merge main
+
+Задача №7 "Пустой источник"
+
+Решение: git push origin :foo; git fetch origin :bar
+
+Задача №8 "Аргументы для pull"
+
+Решение: git pull origin bar:foo; git pull origin main:side
