@@ -1,0 +1,40 @@
+Основы Git
+
+Секция "Введение"
+
+Задача 1 "Коммиты в Git"
+
+Решение: git commit; git commit
+ 
+Задача 2 "Ветвление в Git"
+
+Решение: git checkout -b bugFix  
+
+Задача 3 "Слияние веток в Git"
+
+Решение: git checkout -b bugFix; git commit; git checkout main; git commit; git merge bugFix
+
+Задача 4 "Введение в rebase"
+
+Решение: git checkout -b bugFix; git commit; git checkout main; git commit; git checkout bugFix; git rebase main
+
+
+Секция "Едем дальше"
+
+Задача 1 "Отделение HEAD"
+
+Решение: git checkout C4
+
+Задача 2 "Относительная ссылка ^"
+
+Решение: git checkout bugFix^
+
+Задача 3 "Относительная ссылка ~"
+
+Решение: git branch -f bugFix bugFix~3; git branch -f main C6; git checkout HEAD^
+
+Задача 4 "Отмена изменений в Git"
+
+Решение: git reset local~1; git checkout pushed; git revert pushed
+
+         
